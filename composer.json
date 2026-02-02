@@ -23,7 +23,8 @@
     "require-dev": {
         "mockery/mockery": "^1.6",
         "pestphp/pest": "^2.0",
-        "phpunit/phpunit": "^10.1",
+        "phpunit/phpunit": "^10.0 <10.5.63",
+        "brianium/paratest": "^7.0 <7.4",
         "team-reflex/discord-php": "^7.0"
     },
     "autoload": {
@@ -45,6 +46,9 @@
         ]
     },
     "config": {
+        "audit": {
+            "block-insecure": false
+        },
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
